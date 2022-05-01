@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;/* Deixar sem margin padrão */
+    background-color: #201b2c;/* Color corpo geral */
+}
+
+.main-login {
+    width: 100vw;/* Porcentagem da view port */
+    height: 100vh;/* Porcentagem da altura  */
+    display: flex; /* Deixar as coisas lado a lado */
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center; /* Centralizar no eixo X */
+    align-items: center; /* Centralizar  no eixo Y */
+}
+.left-login,
+.right-login {
+    /*width: 50vw; /* 50% da tela 
+    height: 100vh;*/
+    display: flex; /* Deixar as coisas lado a lado */
+    justify-content: center; /* Centralizar no eixo X */
+    align-items: center; /* Centralizar  no eixo Y */
+    flex-direction: column; /* Mesmo efeito do display: flex, só que em coluna */
+}
+
+.left-login > h1 { /* puxar tags em uma class */
+    font-size: 3vw;
+    color: #77ffc0;
+    font-family: "Bungee", sans-serif;
+}
+.left-img {
+    width: 35vw;
+}
+
+.card-login {
+    width: 300px; /* Tamanho da div que está 60% de 50vh */
+    max-width: 80vw;
+    display: flex; /* Deixar as coisas lado a lado */
+    justify-content: center; /* Centralizar no eixo X */
+    align-items: center; /* Centralizar  no eixo Y */
+    flex-direction: column; /* Mesmo efeito do display: flex, só que em coluna */
+    padding: 30px 35px; /* 30 Baixo /* 35 direita e esquerda */
+    background-color: #2f2841;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px #00000056;  /* box-shadow: ( X ) ( Cima ou baixo ) 40px #00000056;  */
+}
+.card-login > h1 { /* puxar tags em uma class */
+    font-family: "Bungee", sans-serif;
+    color: #00ff88;
+    font-weight: 800; /* Grossura da fonte (Bold)*/
+    margin: 0;
+}
+.textfield {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Esquerda */
+    justify-content: center;
+    margin: 10px 0;
+}
+.textfield > input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px; /* Push geral */
+    background-color: #514869;
+    color: #f0ffffde;
+    font-size: 12pt;
+    box-shadow: 0 10px 40px #00000056;  /* box-shadow: ( X ) ( Cima ou baixo ) 40px #00000056;  */
+    outline: none; /* desabilitar efeito do input*/
+    box-sizing: border-box; /* Colisão para não ultrapassar a div */
+
+}
+.textfield > label {
+    font-family: sans-serif;
+    color: #f0ffffde;
+    margin-bottom: 10px;
+}
+.textfield > input::placeholder {
+    color: #f0ffff94;
+}
+button, input{
+    border: none;
+    outline: none;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 16px 0;
+    margin: 25px;
+    border: none; /* desabilitar efeito da bordar*/
+    border-radius: 8px;
+    outline: none; /* desabilitar efeito do input*/
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    background: #00ff88;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #00ff8052;
+}
